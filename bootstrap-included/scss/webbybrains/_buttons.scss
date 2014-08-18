@@ -1,0 +1,78 @@
+//
+// Buttons
+// --------------------------------------------------
+
+.btn-bordered {
+	
+	border-style:solid;
+	border-width:$btn-bordered-border-size;
+	text-decoration:none !important;
+		
+	&.btn-default {
+  	@include button-variant($btn-default-border, rgba(0,0,0,0), $btn-default-border);
+	}
+	&.btn-inverse {
+  	@include button-variant($btn-inverse-border, rgba(0,0,0,0), $btn-inverse-bg);
+	}
+	&.btn-primary {
+	  @include button-variant($btn-primary-border, rgba(0,0,0,0), $btn-primary-bg);
+	}
+	// Success appears as green
+	&.btn-success {
+	  @include button-variant($btn-success-border, rgba(0,0,0,0), $btn-success-bg);
+	}
+	// Info appears as blue-green
+	&.btn-info {
+	  @include button-variant($btn-info-border, rgba(0,0,0,0), $btn-info-bg);
+	}
+	// Warning appears as orange
+	&.btn-warning {
+	  @include button-variant($btn-warning-border, rgba(0,0,0,0), $btn-warning-bg);
+	}
+	// Warning appears as red
+	&.btn-danger {
+	  @include button-variant($btn-danger-border, rgba(0,0,0,0), $btn-danger-bg);
+	}
+}
+
+
+.btn-loading {
+	color:rgba(0,0,0,0) !important;
+	
+	&:before {
+		color:black;
+		display: inline-block;
+	  font-family: FontAwesome;
+	  font-style: normal;
+	  font-weight: normal;
+	  line-height: 1;
+	  -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+	  content: "\f110";
+	  width:100%;
+	  height:100%;
+	  -webkit-animation: spin 2s infinite linear;
+  	-moz-animation: spin 2s infinite linear;
+  	-o-animation: spin 2s infinite linear;
+  	animation: spin 2s infinite linear;
+	}
+	&.btn-default:before {color:$btn-default-color;}
+	&.btn-primary:before {color:$btn-primary-color;}
+	&.btn-success:before {color:$btn-success-color;}
+	&.btn-info:before {color:$btn-info-color;}
+	&.btn-warning:before {color:$btn-warning-color;}
+	&.btn-danger:before {color:$btn-danger-color;}
+	
+	&.btn-bordered {
+		&.btn-default:before {color:$btn-default-border;}
+		&.btn-primary:before {color:$btn-primary-border;}
+		&.btn-success:before {color:$btn-success-border;}
+		&.btn-info:before {color:$btn-info-border;}
+		&.btn-warning:before {color:$btn-warning-border;}
+		&.btn-danger:before {color:$btn-danger-border;}
+	}
+	
+	&.circle-o-notch:before {content: "\f1ce";}
+	&.gear:before, &.cog:before {content: "\f013";}
+	&.refresh:before {content: "\f021";}
+}

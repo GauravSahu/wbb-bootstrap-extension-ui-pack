@@ -1,0 +1,17 @@
+//
+// Padding helpers
+// --------------------------------------------------
+
+@for $i from $padding-step through 20 {
+	
+	// top
+	.#{$class-slug-padding-top}#{$padding-step*$i} {
+		padding-top:0px + ($padding-step*$i);		
+	}
+
+	// bottom
+	.#{$class-slug-padding-bottom}#{$padding-step*$i} {
+		padding-bottom:0px + ($padding-step*$i);		
+	}
+	
+}

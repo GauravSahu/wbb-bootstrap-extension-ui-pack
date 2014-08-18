@@ -1,0 +1,17 @@
+//
+// Margin helpers
+// --------------------------------------------------
+
+@for $i from $margin-step through 20 {
+	
+	// top
+	.#{$class-slug-margin-top}#{$margin-step*$i} {
+		margin-top:0px + ($margin-step*$i);		
+	}
+	
+	// bottom
+	.#{$class-slug-margin-bottom}#{$margin-step*$i} {
+		margin-bottom:0px + ($margin-step*$i);		
+	}
+	
+}
