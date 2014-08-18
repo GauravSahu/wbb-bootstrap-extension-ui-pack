@@ -1,0 +1,21 @@
+.jumbotron {
+	&.primary {
+		@include wbb-jumbotron-variant($brand-primary, $btn-primary-color, $btn-primary-color);
+	}
+	&.inverse {
+		@include wbb-jumbotron-variant($gray-dark, white, white);
+	}
+	&.success {
+		@include wbb-jumbotron-variant($state-success-bg, $state-success-text, $state-success-text);
+	}
+	&.info {
+		@include wbb-jumbotron-variant($state-info-bg, $state-info-text, $state-info-text);
+	}
+	&.warning {
+		@include wbb-jumbotron-variant($state-warning-bg, $state-warning-text, $state-warning-text);
+	}
+	&.danger {
+		@include wbb-jumbotron-variant($state-danger-bg, $state-danger-text, $state-danger-text);
+	}
+}
+

@@ -1,0 +1,23 @@
+@mixin wbb-button-variant($color, $background, $border) {
+	@include button-variant($color, $background, $border);
+	
+	&:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: darken($color, 10%);
+  }
+
+	&.btn-inverse {
+		&:hover,
+	  &:focus,
+	  &:active,
+	  &.active,
+	  .open > &.dropdown-toggle {
+	    color: lighten($color, 20%);
+	    border-color: lighten($border, 20%);
+	  }
+	}
+  
+}

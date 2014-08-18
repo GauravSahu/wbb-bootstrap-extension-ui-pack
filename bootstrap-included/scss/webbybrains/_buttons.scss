@@ -9,29 +9,29 @@
 	text-decoration:none !important;
 		
 	&.btn-default {
-  	@include button-variant($btn-default-border, rgba(0,0,0,0), $btn-default-border);
+  	@include wbb-button-variant($btn-default-bg, rgba(0,0,0,0), $btn-default-bg);
 	}
 	&.btn-inverse {
-  	@include button-variant($btn-inverse-border, rgba(0,0,0,0), $btn-inverse-bg);
+  	@include wbb-button-variant($btn-inverse-border, rgba(0,0,0,0), $btn-inverse-bg);
 	}
 	&.btn-primary {
-	  @include button-variant($btn-primary-border, rgba(0,0,0,0), $btn-primary-bg);
+	  @include wbb-button-variant($btn-primary-border, rgba(0,0,0,0), $btn-primary-bg);
 	}
 	// Success appears as green
 	&.btn-success {
-	  @include button-variant($btn-success-border, rgba(0,0,0,0), $btn-success-bg);
+	  @include wbb-button-variant($btn-success-border, rgba(0,0,0,0), $btn-success-bg);
 	}
 	// Info appears as blue-green
 	&.btn-info {
-	  @include button-variant($btn-info-border, rgba(0,0,0,0), $btn-info-bg);
+	  @include wbb-button-variant($btn-info-border, rgba(0,0,0,0), $btn-info-bg);
 	}
 	// Warning appears as orange
 	&.btn-warning {
-	  @include button-variant($btn-warning-border, rgba(0,0,0,0), $btn-warning-bg);
+	  @include wbb-button-variant($btn-warning-border, rgba(0,0,0,0), $btn-warning-bg);
 	}
 	// Warning appears as red
 	&.btn-danger {
-	  @include button-variant($btn-danger-border, rgba(0,0,0,0), $btn-danger-bg);
+	  @include wbb-button-variant($btn-danger-border, rgba(0,0,0,0), $btn-danger-bg);
 	}
 }
 
